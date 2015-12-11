@@ -173,6 +173,13 @@ task :features do
   end
 end
 
+desc 'set remotes to ssh URIs'
+task :ssh do
+  (['.'] + GEMS + RAILS).each do |repo|
+    sh "cd #{repo}"
+    sh "git remote set-url origin git@github.com:fastlane/#{repo}.git"
+  end
+end
 #####################################################
 # @!group Helper Methods
 #####################################################
