@@ -62,6 +62,15 @@ task :pull do
   end
 end
 
+desc 'Show the current branches/statuses'
+task :branch do
+  sh 'git branch' # the countdown repo itself
+
+  (GEMS + RAILS).each do |repo|
+    sh "cd #{repo} && git branch"
+  end
+end
+
 desc 'Fetches the latest rubocop config from the fastlane main repo'
 task :fetch_rubocop do
   fl_path = './fastlane/.rubocop_general.yml'
