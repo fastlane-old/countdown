@@ -6,4 +6,4 @@
   </a>
 </h3>
 -------
-<h3 align="center">💎🚀 <b>countdown</b> has moved to the <b>fastlane</b> <a href='https://github.com/fastlane/fastlane/tree/master/countdown'>main repo</a> 🚀💎</h2>
+<h3 align="center">💎🚀 <b>countdown</b> has moved to the <b>fastlane</b> <a href='https://github.com/fastlane/fastlane/'>main repo</a> 🚀💎</h2>
